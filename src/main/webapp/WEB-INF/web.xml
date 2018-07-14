@@ -4,8 +4,26 @@
 	version="2.5">
 
 	<!--添加描述 -->
-	<display-name>Gradle + Spring MVC Hello World + XML</display-name>
-	<description>Spring MVC web application</description>
+	<display-name>Spring MVC Framework</display-name>
+
+	<!-- 配置核心控制器 -->
+	<servlet>
+		<servlet-name>springmvc-dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+
+			<!-- 设置容器配置文件的加载的路径 -->
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:/spring/spring-mvc-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- 为DispatcherServlet建立映射 -->
+	<servlet-mapping>
+		<servlet-name>springmvc-dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
 
 
 	<!-- 配置监听器-->

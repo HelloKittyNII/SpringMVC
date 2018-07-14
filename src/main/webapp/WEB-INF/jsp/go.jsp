@@ -13,21 +13,17 @@
 </head>
 <body>
 
-    <div id="test1">
-        <p>今天是个好天气!</p>
+<div id="test1">
+    <p>今天是个好天气!</p>
 
-    </div>
+</div>
 
-    <div>
-        <p>
-            按钮:<input type='button' id ='bt1' value='点我' />
-        </p>
+<div>
+    <p>
+        按钮:<input type='button' id ='bt1' value='点我' />
+    </p>
 
-    </div>
-
-
-
-
+</div>
 
 </body>
 
