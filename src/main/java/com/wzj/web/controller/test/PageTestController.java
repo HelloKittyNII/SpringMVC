@@ -30,6 +30,8 @@ public class PageTestController
     @RequestMapping(value = "/go")
     public String go()
     {
+        System.out.println("---------PageTestController go executed--------");
+
         return "go";
     }
 

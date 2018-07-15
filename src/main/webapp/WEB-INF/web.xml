@@ -37,6 +37,30 @@
 		<param-value>classpath:/spring/spring.xml</param-value>
 	</context-param>
 
+	<!--注册拦截器-->
+	<filter>
+		<filter-name>testFilter1</filter-name>
+		<filter-class>com.wzj.web.fitler.TestFilter1</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>testFilter1</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!--注册拦截器-->
+	<filter>
+		<filter-name>testFilter2</filter-name>
+		<filter-class>com.wzj.web.fitler.TestFilter2</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>testFilter2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
 	<!-- 解决工程编码过滤器 -->
 	<filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
